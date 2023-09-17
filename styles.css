@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    overflow-x: hidden;
+}
+
+#about-us {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    padding: 0 0px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+    color: rgb(38, 36, 36);
+    margin-top: -50px;
+}
+
+#about-us-in {
+    width: 80%;
+    text-align: center;
+}
+
+#about-us-in h3 {
+    font-size: 42px;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#about-us-in p {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+
+}
+
+@media (max-width: 768px) {
+    #about-us {
+        height: 90vh;
+    }
+}
+
+/* Float three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 20px;
+    /* margin-top: -100px; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hero {
+    margin-top: -25px;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #fcf8f8;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.help {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bullets {
+    text-align: left;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 15px;
+}
+
+.acc {
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
